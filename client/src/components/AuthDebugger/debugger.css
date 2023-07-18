@@ -1,0 +1,29 @@
+.debugger-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.token, .userInfo {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  background-color: #f9f9f9;
+}
+
+@media screen and (min-width: 768px) {
+  .debugger-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .token, .userInfo {
+    width: 48%; 
+  }
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}

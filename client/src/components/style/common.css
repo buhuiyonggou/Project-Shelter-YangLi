@@ -1,0 +1,172 @@
+[class*="col-"] {
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 425px){
+    .col-s-12 {width: 93%;}
+    .d-s-none {
+        display: none;
+    }
+    .row{
+        width:93%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 42.5%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    .d-flex {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 21.5%;}
+    .col-4 {width: 46.5%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 46.5%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .d-none {
+        display: none;
+    }
+    .d-flex {
+        display: flex;
+    }
+}
+
+.container {
+    width: 100vw;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+}
+.ai-c {
+    align-items: center;
+}
+.ai-s {
+    align-items: flex-start;
+}
+.jc-c {
+    justify-content: center;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button-large {
+    width: 80px;
+    height: 40px;
+}
+.button-blue {
+    background: cornflowerblue;
+    color: white;
+}
+.button-orange {
+    background: orangered;
+    color: white;
+}
+.button-light {
+    background: #eae9e9;
+
+}
+.mr-1 {
+    margin-right: 10px;
+}
+
+.text-orange {
+    color: orangered;
+}
+.bg-orange {
+    padding: 10px;
+    background: orangered;
+}
+.bg-blue {
+    background: cornflowerblue;
+    padding: 10px;
+}
+
+.text-white {
+    color: white;
+}
+
+.paper {
+    box-sizing: border-box;
+    border-radius: 15px;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 0 15px gainsboro;
+}
+
+.p-1 {
+    padding: 10px;
+}
+
+.round {
+    border-radius: 10px;
+}
+
+.textfield {
+    padding: 10px;
+
+}
+.w-90 {
+    width: 90%;
+}
+.full-width {
+    width: 100%;
+}
+.full-height {
+    height: 100%;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 3em;
+  }

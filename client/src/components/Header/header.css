@@ -1,0 +1,52 @@
+.bg-orange {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 10px;
+}
+
+.nav-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; 
+  width: 100%;
+  align-self: center;
+}
+
+.button {
+  width: 100%; 
+  text-align: center; 
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-items {
+    flex-direction: column;
+    display:block;
+  }
+
+  .header-container {
+   size-adjust: auto;
+  }
+
+  .button {
+    width: 80%; 
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .button {
+    width: auto; 
+  }
+}

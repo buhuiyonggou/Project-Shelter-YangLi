@@ -1,0 +1,36 @@
+.button-blue:hover {
+  background-color: #0056b3
+}
+
+.col-5, .col-7 {
+  text-align: center;
+}
+
+.puppyimg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paper {
+  padding: 1em;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px gainsboro;
+  margin: 1em;
+}
+
+.puppy-row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  .puppy-row {
+    flex-direction: column;
+    margin:0 auto;
+  }
+  .paper {
+    width: 80%;
+  }
+}
