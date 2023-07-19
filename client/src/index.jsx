@@ -2,12 +2,11 @@ import './index.css';
 import './components/style/common.css';
 
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ReactDOM from 'react-dom/client';
 
 import Entry from './components/Home/Home';
 import Dashboard from './components/Dashboard';
-import LoginLayout from "./components/LoginLayout";
 import Puppies from "./components/Puppies";
 import PuppyDetails from "./components/PuppyDetails";
 import Profile from "./components/Profile/Profile";
@@ -51,10 +50,15 @@ const requestedScopes = [
 
 
 function RequireAuth({ children }) {
-  const { isAuthenticated, isLoading } = useAuth0();
+  const { isAuthenticated, isLoading, loginWithRedirect } = useAuth0();
   
-  if (!isLoading && !isAuthenticated) {
-    return <Navigate to="/login" replace />;
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (!isAuthenticated) {
+    loginWithRedirect();
+    return null;
   }
 
   return children;
@@ -77,7 +81,6 @@ root.render(
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Entry />} />
-            <Route path="login" element={<LoginLayout />} />
             <Route path="puppies" element={<Puppies />} />
             <Route path="details/:puppyId" element={<PuppyDetails />} />
             <Route path="/verify-user" element={<VerifyUser />}/>

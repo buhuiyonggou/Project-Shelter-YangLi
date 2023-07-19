@@ -34,18 +34,16 @@ function Home() {
               <p>Phone: 204 123 4567</p> 
               <p>Address: 410 W Georgia St #1400, Vancouver</p>
             </div>
-            {!isAuthenticated ? (<div>
-              <Link to="/login">
-                <button className={'button button-blue'}>
-                  Login
-                </button>
-              </Link> 
+            {!isAuthenticated ? (<div>(<Link to="/dashboard">
+              <button className={'button button-blue'}>
+                Login
+              </button></Link>)
               <strong className={'instruction'}>
               <i>
                 to start the adoption process.
               </i>
               </strong>
-            </div>) : (
+              </div>) : (
             <div className='goProfile'>
               {user && (
                 <div>  

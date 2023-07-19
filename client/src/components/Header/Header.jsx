@@ -41,7 +41,7 @@ export default function Header() {
 
           {!user && (
             <p>
-              <Link to="/login">
+              <Link to="/dashboard">
                 <button className='button button-blue'>Login</button>
               </Link>
             </p>
@@ -79,7 +79,7 @@ export default function Header() {
 
         {!user && (
           <li className='mr-1'>
-            <Link to="/login">
+            <Link to="/dashboard">
               <button className='button button-blue'>Login</button>
             </Link>
           </li>

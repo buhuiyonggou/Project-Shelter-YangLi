@@ -10,14 +10,6 @@
   align-items: center;
 }
 
-.description-container {
-  flex: 1 1 40%; 
-  padding: 5px; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 @media screen and (max-width: 768px) { 
   .home-container .video-container,
   .home-container .description-container {
@@ -41,13 +33,6 @@
   margin: 0 auto;
   max-width: 1200px;
   padding: 0.5em;
-}
-
-.paper {
-  box-sizing: border-box;
-  border-radius: 15px;
-  padding: 60px; 
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .button {
@@ -103,11 +88,6 @@ a:hover {
   margin-top: 0.2em;
   margin-bottom: 1em;
   font-weight: bold;
-}
-
-.instruction {
-  color: white;
-  padding:1em 0;
 }
 
 .available-puppies, .goProfile {
