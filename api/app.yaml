@@ -1,7 +1,7 @@
 runtime: nodejs16
 
 env_variables:
-  DATABASE_URL: "mysql://fcwnxahbx2nn90zmbiyl:pscale_pw_JYqHGe8wlWyZ1yiXVihdRB3z7C39ZZNHWfZkPjz5vN8@aws.connect.psdb.cloud/deploy-test?sslaccept=strict"
+  DATABASE_URL: "mysql://s1vyt6d5ci67yy9bpvpx:pscale_pw_3xNsUPpU28itICV3nXwtOon60jJ71YGuFs8dsFE5den@aws.connect.psdb.cloud/deploy-test?sslaccept=strict"
   AUTH0_JWK_URI: "https://dev-kuzzquc67gp2ehj0.us.auth0.com/.well-known/jwks.json"
   AUTH0_AUDIENCE: "https://api.puppies"
   AUTH0_ISSUER: "https://dev-kuzzquc67gp2ehj0.us.auth0.com"
