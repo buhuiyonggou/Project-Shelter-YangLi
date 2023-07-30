@@ -1,0 +1,20 @@
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px); 
+  text-align: center;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .error-container {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .error-container {
+    font-size: 1.5em;
+  }
+}

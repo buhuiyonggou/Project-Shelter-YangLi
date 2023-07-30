@@ -1,0 +1,19 @@
+.carousel-container{
+  width: 75%;
+  align-self: center;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 768px) { 
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; 
+    padding-left: 20%;
+    padding-right: 20%;
+    height: 0;
+  }
+}
+
+
+
