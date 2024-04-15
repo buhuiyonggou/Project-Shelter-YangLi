@@ -14,7 +14,7 @@ https://puppy-shelter-client.onrender.com
 ## How to Run
 
 Prepare keys/id as below: 
-## frontend configuration
+### frontend configuration
 - `REACT_APP_API_URL`
 - `REACT_APP_AUTH0_DOMAIN`
 - `REACT_APP_AUTH0_CLIENT_ID`
@@ -26,3 +26,7 @@ Prepare keys/id as below:
 ### Client
 - `REACT_APP_AUTH0_DOMAIN`
 - `REACT_APP_AUTH0_CLIENT_ID`
+
+##
+Enter api, run: node index.js
+Enter client, run: npm start
