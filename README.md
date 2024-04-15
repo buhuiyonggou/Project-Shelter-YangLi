@@ -8,8 +8,8 @@ Welcome to **Puppy Shelter**. Our app designed to help sheltered puppies finding
 - **Easy to Use:** The app is designed to be responsive for both PC and mobile user, and every functionality has comprehensive instruction to enter. 
 
 ## Website
-### website needs to be re-deploy since planetScale kills free package
-https://assibment-3-3-buhuiyonggou-buhuiyonggou-yangli4944.vercel.app/
+### website is re-deployed
+https://puppy-shelter-client.onrender.com
 
 ## How to Run
 
