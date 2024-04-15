@@ -28,5 +28,5 @@ Prepare keys/id as below:
 - `REACT_APP_AUTH0_CLIENT_ID`
 
 ##
-Enter api, run: node index.js
-Enter client, run: npm start
+- Enter api, run: node index.js
+- Enter client, run: npm start
