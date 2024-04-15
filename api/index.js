@@ -28,6 +28,10 @@ app.use(morgan("dev"));
 const { PrismaClient } = pkg;
 const prisma = new PrismaClient();
 
+app.get("/", (req, res) => {
+  res.send("Welcome to Project Shelter API");
+})
+
 app.get("/ping", (req, res) => {
     res.send("pong");
   });
