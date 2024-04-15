@@ -19,11 +19,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(morgan("dev"));
 
-app.use(cors({
-  origin: ['https://project-shelter-yangli.onrender.com'], 
-  credentials: true, 
-  methods: ['GET', 'POST', 'PUT', 'DELETE']
-}));
+// app.use(cors({
+//   origin: ['https://project-shelter-yangli.onrender.com'], 
+//   credentials: true, 
+//   methods: ['GET', 'POST', 'PUT', 'DELETE']
+// }));
 
 const { PrismaClient } = pkg;
 const prisma = new PrismaClient();
